@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.taghelper-button {
+    width: 100%;
+    height: 100%;
+}
+
+.button-row {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.one-button {
+    display: grid;
+    width: 400px;
+    grid-template-columns: auto;
+    grid-template-rows: 40px;
+    gap: 10px;
+}
+
+.disabled-button {
+    color: yellow;
+}
+
+.selected-button {
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+.taghelper-sitetypes, .site-tpph-rooms, .site-tpph-waves {
+    display: grid;
+    width: 400px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 40px;
+    gap: 10px;
+    
+}
+
+.site-nrf-waves {
+    display: grid;
+    width: 400px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: 40px;
+    gap: 10px;
+}

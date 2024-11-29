@@ -4,54 +4,68 @@
 <head>
     <title>This is a title</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+    <script type="module" src="js/script.js" defer></script>
 </head>
 
 <body>
-    <div class="taghelper">
-        <div class="taghelper-sitetypes button-row">
-            <button class="taghelper-button" id="buttonNRF" onClick="selectNRF()">NRF</button>
-            <button class="taghelper-button" id="buttonTCRC" onClick="selectTCRC()">TCRC</button>
-            <button class="taghelper-button" id="buttonTPPH" onClick="selectTPPH()">TPPH</button>
-        </div>
-        
-        <div class="site-nrf" style="display: none;" id="siteNRF">
-            <div class="site-nrf-rooms one-button button-row">
-                <button disabled class="taghelper-button disabled-button" >Only one room</button>
+    <section class="taghelper">
+        <section class="encounters">
+            <div class="taghelper-sitetypes button-row">
+                <button clas="taghelper-button" id="buttonVG" onClick="selectVG()">VG</button>
+                <button clas="taghelper-button" id="buttonAS" onClick="selectAS()">AS</button>
+                <button clas="taghelper-button" id="buttonHQ" onClick="selectHQ()">HQ</button>
             </div>
-            <div class="site-nrf-waves button-row">
-                <button class="taghelper-button">Wave 1</button>
-                <button class="taghelper-button">Wave 2</button>
-                <button class="taghelper-button">Wave 3</button>
-                <button class="taghelper-button">Wave 4</button>
-            </div>
-        </div>
+            <section id="headquarters" style="display: none;">
+                <div class="taghelper-sitetypes button-row">
+                    <button class="taghelper-button" id="buttonNRF" onClick="selectNRF()">NRF</button>
+                    <button class="taghelper-button" id="buttonTCRC" onClick="selectTCRC()">TCRC</button>
+                    <button class="taghelper-button" id="buttonTPPH" onClick="selectTPPH()">TPPH</button>
+                </div>
+                
+                <div class="site-nrf" style="display: none;" id="siteNRF">
+                    <div class="site-nrf-rooms one-button button-row">
+                        <button disabled class="taghelper-button disabled-button" >Only one room</button>
+                    </div>
+                    <div class="site-nrf-waves button-row">
+                        <button class="taghelper-button">Wave 1</button>
+                        <button class="taghelper-button">Wave 2</button>
+                        <button class="taghelper-button">Wave 3</button>
+                        <button class="taghelper-button">Wave 4</button>
+                    </div>
+                </div>
 
-        <div class="site-tcrc" style="display: none;" id="siteTCRC">
-            <div class="site-tcrc-rooms one-button button-row">
-                <button disabled class="taghelper-button disabled-button">Only one room</button>
-            </div>
-            <div class="site-tcrc-waves one-button button-row">
-                <button disabled class="taghelper-button disabled-button" >One wave, respawning rats</button>
-            </div>
-        </div>
+                <div class="site-tcrc" style="display: none;" id="siteTCRC">
+                    <div class="site-tcrc-rooms one-button button-row">
+                        <button disabled class="taghelper-button disabled-button">Only one room</button>
+                    </div>
+                    <div class="site-tcrc-waves one-button button-row">
+                        <button disabled class="taghelper-button disabled-button" >One wave, respawning rats</button>
+                    </div>
+                </div>
 
-        <div class="site-tpph" style="display: none;" id="siteTPPH">
-            <div class="site-tpph-rooms button-row">
-                <button class="taghelper-button">Room 1</button>
-                <button class="taghelper-button">Room 2</button>
-                <button class="taghelper-button">Room 3</button>
-            </div>
-            <div class="site-tpph-room-block one-button button-row" style="display: grid;" id="siteTPPHBlock">
-                <button disabled class="taghelper-button disabled-button">Waves in Room 3</button>
-            </div>
-            <div class="site-tpph-waves button-row" style="display: none;" id="siteTPPHWaves">
-                <button class="taghelper-button">Wave 1</button>
-                <button class="taghelper-button">Wave 2</button>
-                <button class="taghelper-button">Wave 3</button>
-            </div>
-        </div>
-    </div>
+                <div class="site-tpph" style="display: none;" id="siteTPPH">
+                    <div class="site-tpph-rooms button-row">
+                        <button class="taghelper-button">Room 1</button>
+                        <button class="taghelper-button">Room 2</button>
+                        <button class="taghelper-button">Room 3</button>
+                    </div>
+                    <div class="site-tpph-room-block one-button button-row" style="display: grid;" id="siteTPPHBlock">
+                        <button disabled class="taghelper-button disabled-button">Waves in Room 3</button>
+                    </div>
+                    <div class="site-tpph-waves button-row" style="display: none;" id="siteTPPHWaves">
+                        <button class="taghelper-button">Wave 1</button>
+                        <button class="taghelper-button">Wave 2</button>
+                        <button class="taghelper-button">Wave 3</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <ul class="taglist">
+                
+            </ul>
+        </section>
+    </section>
 </body>
 
 </html>

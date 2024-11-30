@@ -1,0 +1,190 @@
+{
+    "VG": [],
+    "AS": [],
+    "HQ": {
+        "TPPH": {
+            "Rooms": [
+                {
+                    "Waves": [
+                        {
+                            "Numbers": [
+                                "Outuni",
+                                "Vylade",
+                                "Auga",
+                                "Osti"
+                            ]
+                        },
+                        {
+                            "DDD": [
+                                "Tama",
+                                "Schmael",
+                                "Renyn",
+                                "Tags in reverse order"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Waves": [
+                        {
+                            "Numbers": [
+                                "Deltole",
+                                "Osti",
+                                "Romi"
+                            ]
+                        },
+                        {
+                            "DDD": [
+                                "Schmael",
+                                "Renyn",
+                                "Tags in reverse order"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Waves": [
+                        {
+                            "Numbers": [
+                                "Mara",
+                                "Romi",
+                                "Osti"
+                            ],
+                            "DDD": [
+                                "Tama",
+                                "Eystur",
+                                "Tags in reverse order"
+                            ]
+                        },
+                        {
+                            "Numbers": [
+                                "Deltole",
+                                "Intaki",
+                                "Romi",
+                                "Osti"
+                            ],
+                            "DDD": [
+                                "Tama",
+                                "Schmael",
+                                "Tags in reverse order"
+                            ]
+                        },
+                        {
+                            "Numbers": [
+                                "Arnon",
+                                "Outuni",
+                                "Vylade",
+                                "Antem",
+                                "Yulai",
+                                "Osti"
+                            ],
+                            "DDD": [
+                                "Arnon",
+                                "Outuni",
+                                "Schameel",
+                                "Tags in reverse order"
+                            ],
+                            "Tower": "Broadcast the tower after third wave dies"
+                        }
+                    ]
+                }
+            ]
+        },
+        "TCRC": {
+            "Rooms": [
+                {
+                    "Waves": [
+                        {
+                            "Numbers": [
+                                "Outuni",
+                                "Deltoles"
+                            ],
+                            "DDD": [
+                                "Respawning Niarjas",
+                                "UNTAGGED Schmaels"
+                            ],
+                            "Tower": "Broadcast the tower after MTAC drop",
+                            "X": "Respawning Schmaels and Auga, 10'o clock from beacon"
+                        }
+                    ]
+                }
+            ]
+        },
+        "NRF": {
+            "Rooms": [
+                {
+                    "Waves": [
+                        {
+                            "Numbers": [
+                                "Deltole",
+                                "Osti",
+                                "Romi"
+                            ],
+                            "Letters": [
+                                "Mara",
+                                "Vylade",
+                                "Uitra"
+                            ],
+                            "DDD": [
+                                "Schmael",
+                                "Renyn",
+                                "Tags in reverse order"
+                            ]
+                        },
+                        {
+                            "Numbers": [
+                                "Uitra",
+                                "Romi",
+                                "Osti"
+                            ],
+                            "Letters": [
+                                "Antem",
+                                "Yulai"
+                            ],
+                            "DDD": [
+                                "Tama",
+                                "Schmael",
+                                "Tags in reverse order"
+                            ]
+                        },
+                        {
+                            "Numbers": [
+                                "Mara",
+                                "Vylade",
+                                "Romi"
+                            ],
+                            "Letters": [
+                                "Antem",
+                                "Yulai"
+                            ],
+                            "DDD": [
+                                "Tama",
+                                "Schmael",
+                                "Tags in reverse order"
+                            ]
+                        },
+                        {
+                            "Numbers": [
+                                "Outini",
+                                "Vylade",
+                                "Deltole",
+                                "Intaki",
+                                "Osti"
+                            ],
+                            "Letters": [
+                                "Antem",
+                                "Yulai"
+                            ],
+                            "DDD": [
+                                "Outuni",
+                                "Vylade",
+                                "Eystur",
+                                "Tags in reverse order"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

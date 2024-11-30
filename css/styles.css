@@ -47,3 +47,33 @@ body {
     grid-template-rows: 40px;
     gap: 10px;
 }
+
+.tag-list-container {
+    display: grid;
+    width: 400px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 160px));
+    gap: 10px;
+}
+
+/* .tag-list {
+    border-style: solid;
+    border-color: aqua;
+    border-width: 5px;
+} */
+
+.tag-list-top-row {
+    display: grid;
+    width: 400px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 40px;
+    gap: 10px;
+}
+
+.tag-list-bot-row {
+    display: grid;
+    width: 400px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 40px;
+    gap: 10px;
+}

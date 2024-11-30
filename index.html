@@ -4,33 +4,33 @@
 <head>
     <title>This is a title</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="module" src="js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <section class="taghelper">
         <section class="encounters">
             <div class="taghelper-sitetypes button-row">
-                <button clas="taghelper-button" id="buttonVG" onClick="selectVG()">VG</button>
-                <button clas="taghelper-button" id="buttonAS" onClick="selectAS()">AS</button>
-                <button clas="taghelper-button" id="buttonHQ" onClick="selectHQ()">HQ</button>
+                <button clas="taghelper-button" id="buttonVG">VG</button>
+                <button clas="taghelper-button" id="buttonAS">AS</button>
+                <button clas="taghelper-button" id="buttonHQ">HQ</button>
             </div>
             <section id="headquarters" style="display: none;">
                 <div class="taghelper-sitetypes button-row">
-                    <button class="taghelper-button" id="buttonNRF" onClick="selectNRF()">NRF</button>
-                    <button class="taghelper-button" id="buttonTCRC" onClick="selectTCRC()">TCRC</button>
-                    <button class="taghelper-button" id="buttonTPPH" onClick="selectTPPH()">TPPH</button>
+                    <button class="taghelper-button" id="buttonNRF">NRF</button>
+                    <button class="taghelper-button" id="buttonTCRC">TCRC</button>
+                    <button class="taghelper-button" id="buttonTPPH">TPPH</button>
                 </div>
-                
+
                 <div class="site-nrf" style="display: none;" id="siteNRF">
                     <div class="site-nrf-rooms one-button button-row">
-                        <button disabled class="taghelper-button disabled-button" >Only one room</button>
+                        <button disabled class="taghelper-button disabled-button">Only one room</button>
                     </div>
                     <div class="site-nrf-waves button-row">
-                        <button class="taghelper-button">Wave 1</button>
-                        <button class="taghelper-button">Wave 2</button>
-                        <button class="taghelper-button">Wave 3</button>
-                        <button class="taghelper-button">Wave 4</button>
+                        <button class="taghelper-button" id="nrfWave1">Wave 1</button>
+                        <button class="taghelper-button" id="nrfWave2">Wave 2</button>
+                        <button class="taghelper-button" id="nrfWave3">Wave 3</button>
+                        <button class="taghelper-button" id="nrfWave4">Wave 4</button>
                     </div>
                 </div>
 
@@ -39,34 +39,52 @@
                         <button disabled class="taghelper-button disabled-button">Only one room</button>
                     </div>
                     <div class="site-tcrc-waves one-button button-row">
-                        <button disabled class="taghelper-button disabled-button" >One wave, respawning rats</button>
+                        <button disabled class="taghelper-button disabled-button">One wave, respawning rats</button>
                     </div>
                 </div>
 
                 <div class="site-tpph" style="display: none;" id="siteTPPH">
                     <div class="site-tpph-rooms button-row">
-                        <button class="taghelper-button">Room 1</button>
-                        <button class="taghelper-button">Room 2</button>
-                        <button class="taghelper-button">Room 3</button>
+                        <button class="taghelper-button" id="tpphRoom1">Room 1</button>
+                        <button class="taghelper-button" id="tpphRoom2">Room 2</button>
+                        <button class="taghelper-button" id="tpphRoom3">Room 3</button>
                     </div>
                     <div class="site-tpph-room-block one-button button-row" style="display: grid;" id="siteTPPHBlock">
                         <button disabled class="taghelper-button disabled-button">Waves in Room 3</button>
                     </div>
                     <div class="site-tpph-waves button-row" style="display: none;" id="siteTPPHWaves">
-                        <button class="taghelper-button">Wave 1</button>
-                        <button class="taghelper-button">Wave 2</button>
-                        <button class="taghelper-button">Wave 3</button>
+                        <button class="taghelper-button" id="tpphWave1">Wave 1</button>
+                        <button class="taghelper-button" id="tpphWave2">Wave 2</button>
+                        <button class="taghelper-button" id="tpphWave3">Wave 3</button>
                     </div>
                 </div>
             </section>
         </section>
-        <section>
-            <ul class="taglist">
-                
-            </ul>
+        <section class="tag-list-container">
+            <!--TODO Split this into a grid, 5 columns, one for each list-->
+            <div class="tag-list-top-row" id="taglist">
+                <ul class="tag-list" id="taglistnumbers">
+
+                </ul>
+                <ul class="tag-list" id="taglistletters">
+
+                </ul>
+                <ul class="tag-list" id="taglistddd">
+                    
+                </ul>
+            </div>
+            <div class="tag-list-bot-row" id="taglist">
+                <ul class="tag-list" id="taglistx">
+
+                </ul>
+                <ul class="tag-list" id="taglisttower">
+
+                </ul>
+            </div>
         </section>
     </section>
+
 </body>
+<script src="js/script.js"></script>
 
 </html>
-

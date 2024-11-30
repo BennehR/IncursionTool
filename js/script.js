@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const tagListNumbers = document.getElementById("taglistnumbers");
     const tagListLetters = document.getElementById("taglistletters");
     const tagListDDD = document.getElementById("taglistddd");
-    const tagListX = document.getElementById("taglistddd");
-    const tagListTower = document.getElementById("taglistddd");
+    const tagListX = document.getElementById("taglistx");
+    const tagListTower = document.getElementById("taglisttower");
 
     function selectWave(encounter, site, room, wave) {
         wave = wave - 1;
@@ -96,15 +96,81 @@ document.addEventListener("DOMContentLoaded", function () {
         if ($(tagListX).length != 0) { while (tagListX.firstChild) tagListX.removeChild(tagListX.firstChild); }
         if ($(tagListTower).length != 0) { while (tagListTower.firstChild) tagListTower.removeChild(tagListTower.firstChild); }
 
-        if (numberTags.length != undefined) {
-            var li = document.createElement("li");
-            tagListNumbers.appendChild(li);
+        // Set number tags
+        if (numberTags != undefined) {
+            const nodeHeader = document.createElement("li");
+            const nodeHeaderText = document.createTextNode("Numbers")
+            nodeHeader.appendChild(nodeHeaderText);
+            tagListNumbers.appendChild(nodeHeaderText);
 
+            tags[encounter][site]["Rooms"][room]["Waves"][wave]["Numbers"].forEach(target => {
+                const nodeLI = document.createElement("li");
+                const nodeLIText = document.createTextNode(target);
+                nodeLI.appendChild(nodeLIText);
+                tagListNumbers.appendChild(nodeLI);
+            });
         }
 
-        tags[encounter][site]["Rooms"][room]["Waves"][wave]["Numbers"].forEach(element => {
-            // console.log(element);
-        });
+        // Set letter tags
+        if (letterTags != undefined) {
+            const nodeHeader = document.createElement("li");
+            const nodeHeaderText = document.createTextNode("Letters")
+            nodeHeader.appendChild(nodeHeaderText);
+            tagListLetters.appendChild(nodeHeaderText);
+
+            tags[encounter][site]["Rooms"][room]["Waves"][wave]["Letters"].forEach(target => {
+                const nodeLI = document.createElement("li");
+                const nodeLIText = document.createTextNode(target);
+                nodeLI.appendChild(nodeLIText);
+                tagListLetters.appendChild(nodeLI);
+            });
+        }
+
+        //Set DDD tags
+        if (dddTags != undefined) {
+            const nodeHeader = document.createElement("li");
+            const nodeHeaderText = document.createTextNode("DDD")
+            nodeHeader.appendChild(nodeHeaderText);
+            tagListDDD.appendChild(nodeHeaderText);
+
+            tags[encounter][site]["Rooms"][room]["Waves"][wave]["DDD"].forEach(target => {
+                const nodeLI = document.createElement("li");
+                const nodeLIText = document.createTextNode(target);
+                nodeLI.appendChild(nodeLIText);
+                tagListDDD.appendChild(nodeLI);
+            });
+        }
+
+        // Set X tags
+        if (xTags != undefined) {
+            const nodeHeader = document.createElement("li");
+            const nodeHeaderText = document.createTextNode("X")
+            nodeHeader.appendChild(nodeHeaderText);
+            tagListX.appendChild(nodeHeaderText);
+
+            const nodeLI = document.createElement("li");
+            const nodeLIText = document.createTextNode(tags[encounter][site]["Rooms"][room]["Waves"][wave]["X"]);
+            nodeLI.appendChild(nodeLIText);
+            tagListX.appendChild(nodeLI);
+        }
+
+        // Set tower tags
+        if (towerTags != undefined) {
+            const nodeHeader = document.createElement("li");
+            const nodeHeaderText = document.createTextNode("Tower")
+            nodeHeader.appendChild(nodeHeaderText);
+            tagListTower.appendChild(nodeHeaderText);
+
+            
+            const nodeLI = document.createElement("li");
+            const nodeLIText = document.createTextNode(tags[encounter][site]["Rooms"][room]["Waves"][wave]["Tower"]);
+            nodeLI.appendChild(nodeLIText);
+            tagListTower.appendChild(nodeLI);
+        }
+
+
+
+        
     }
 
 

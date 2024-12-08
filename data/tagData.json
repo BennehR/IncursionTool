@@ -12,9 +12,7 @@
                                 "Vylade",
                                 "Auga",
                                 "Osti"
-                            ]
-                        },
-                        {
+                            ],
                             "DDD": [
                                 "Tama",
                                 "Schmael",
@@ -31,9 +29,12 @@
                                 "Deltole",
                                 "Osti",
                                 "Romi"
-                            ]
-                        },
-                        {
+                            ],
+                            "Letters": [
+                                "Mara",
+                                "Auga",
+                                "Antem"
+                            ],
                             "DDD": [
                                 "Schmael",
                                 "Renyn",

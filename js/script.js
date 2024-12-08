@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Set X tags
         if (xTags != undefined) {
             const nodeHeader = document.createElement("li");
-            const nodeHeaderText = document.createTextNode("X")
+            const nodeHeaderText = document.createTextNode("X - Do not shoot")
             nodeHeader.appendChild(nodeHeaderText);
             tagListX.appendChild(nodeHeaderText);
 
